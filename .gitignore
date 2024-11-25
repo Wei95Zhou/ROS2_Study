@@ -3,3 +3,6 @@ ws00_helloworld
 ws01_plumbing/build
 ws01_plumbing/install
 ws01_plumbing/log
+ws02_tools/build
+ws02_tools/install
+ws02_tools/log
