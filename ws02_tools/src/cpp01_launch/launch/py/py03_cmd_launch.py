@@ -18,7 +18,7 @@ from launch.substitutions import FindExecutable
 # 获取功能包下share目录路径--------
 # from ament_index_python.packages import get_package_share_directory
 
-from launch.actions import TimerAction, LogInfo
+from launch.actions import TimerAction
 
 """ 
     需求：启动 turtlesim_node 节点，并调用指令打印乌龟的位姿信息
