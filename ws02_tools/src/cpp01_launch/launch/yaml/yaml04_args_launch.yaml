@@ -1,0 +1,15 @@
+launch:
+# 1.声明参数
+- arg:
+    name: "bg_r"
+    default: "0"
+# 2.调用参数
+- node:
+    pkg: "turtlesim"
+    exec: "turtlesim_node"
+    param:
+    -
+      name: "background_r"
+      value: $(var bg_r)
+# 3.launch文件执行时动态传参
+# ros2 launch cpp01_launch yaml04_args_launch.yaml bg_r:=200
