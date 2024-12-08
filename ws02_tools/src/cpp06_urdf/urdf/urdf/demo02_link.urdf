@@ -1,0 +1,30 @@
+<!-- 
+    需求：生成不同形状（立方体、球体、圆柱体）的机器人部件
+ -->
+ <robot name="demo02_link">
+    <!-- 定义颜色 -->
+    <material name="yellow">
+        <color rgba="0.8 0.6 0.2 1.0"/>
+    </material>
+    <link name="base_link">
+        <!-- 描述外观 -->
+        <visual>
+            <!-- 形状 -->
+            <geometry>
+                <!-- <box size="0.0 0.0 0.0"/> -->
+                <!-- 球状 -->
+                <!-- <sphere radius="0.5"/> -->
+                <!-- 圆柱 -->
+                <cylinder radius="0.1" length="2.0"/>
+            </geometry>
+            <!-- 平移量和旋转度 -->
+            <origin xyz="1 0 0" rpy="0.0 0.0 0.0"/>
+            <!-- 材质 -->
+            <!-- 封装颜色变量并调用 -->
+            <!-- <material name="yellow">
+                <color rgba="0.8 0.6 0.2 1.0"/>
+            </material> -->
+            <material name="yellow"/>
+        </visual>
+    </link>
+ </robot>
